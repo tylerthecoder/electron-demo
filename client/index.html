@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Electron Demo</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"> </script>
+</head>
+
+<body>
+	<div id="sideBar">
+		<p> Channels: </p>
+
+		<div id="channelButtons">
+
+		</div>
+
+		<br />
+
+		<div id="addChannel">
+			<input type="text" id="channelInput" placeholder="Join Channel" />
+			<button onclick="joinChannel()"> Join </button>
+		</div>
+
+	</div>
+	<div id="main">
+		<div id="messages"> </div>
+
+		<div id="sendChat">
+			<input type="text" id="messageInput" placeholder="Send Message" />
+			<button onclick="sendMessage()"> Send </button>
+		</div>
+	</div>
+</body>
+
+</html>
